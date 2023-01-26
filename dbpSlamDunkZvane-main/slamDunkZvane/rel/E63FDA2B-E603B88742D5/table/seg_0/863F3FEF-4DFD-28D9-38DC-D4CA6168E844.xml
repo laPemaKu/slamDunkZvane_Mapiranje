@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="863F3FEF-4DFD-28D9-38DC-D4CA6168E844" name="PREDSTAVNIK_EKIPE">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>75175A6B-50E0-787E-F150-126F762CD1B6</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<abbreviation>PRE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="KUP_Kupac_ID" id="E6127F7A-E45F-D703-E763-BC7F216A9634">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>DEA17149-448A-7C83-3F6A-2E24764444A8</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="564473C5-CD04-D4A2-0F87-C4FB243B0AEE" referredColumn="A8840E9A-B8E8-DFEA-AF5D-B5834C50A6C2"/>
+</associations>
+</Column>
+<Column name="PRE_Ekipa" id="836E92CF-4FA5-C132-3868-90B6A134451E">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>396B8E1C-81B7-6C19-89E8-FBEBDFBF09AE</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EKIPA_Ekipa_ID" id="0C5649E2-3C0F-7769-C783-E2B7C45DB543">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>5C98D13E-5E0C-2FAE-79F4-70C25EEA8A32</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="665F05E2-E8E3-5878-6FDC-C60955693149" referredColumn="BCE91AF0-3E3D-E16A-B041-B594CF9E4FB6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8641B20D-6F16-6231-3267-A449C444F076" name="PREDSTAVNIK_EKIPE_PK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>EBC4A02A-7CDB-61CB-1C74-CB0E277951B0</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6127F7A-E45F-D703-E763-BC7F216A9634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FBF2625-EAD9-1708-7794-78CF040A8209" name="PREDSTAVNIK_EKIPE__IDX">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5861C1EF-6B48-908A-4412-B5A443D8A6F1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0C5649E2-3C0F-7769-C783-E2B7C45DB543"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E24E1F61-D893-9236-A818-9E1CD3D85E05" name="PREDSTAVNIK_EKIPE_KUPAC_FK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>1DC0B93B-E38E-30A9-9632-FFA1069D6E4F</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6127F7A-E45F-D703-E763-BC7F216A9634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3600BCC9-9CAD-3F92-40DE-856777E9500C" name="PREDSTAVNIK_EKIPE_EKIPA_FK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>5861C1EF-6B48-908A-4412-B5A443D8A6F1</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0C5649E2-3C0F-7769-C783-E2B7C45DB543"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

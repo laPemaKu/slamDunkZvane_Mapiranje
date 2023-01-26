@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE5B68EB-D4A4-9DC6-8055-2C1383A44E1A" name="NARUCENI_ARTIKL">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>A0122979-352D-2C0F-1B45-688CA7A44CFA</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<abbreviation>NAK</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="narucena_kolicina" id="02E1C9C5-3CEF-3C95-52BA-9604ECA59D1D">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>B9DB7270-6EF7-31A0-E93F-64231D1E19F4</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isporucena_kolicina" id="4FA4ECBA-5606-607F-377D-8F4083453380">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>41368A24-9EA7-97F4-EE70-8B31BDF0EA4C</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NARUDZBA_Narudzba_ID" id="992B48CC-A24C-2DAC-A243-99F857FF3075">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>751E3E6D-9DC9-34CE-59C1-6338ACF3E189</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9FE6CA1-39C4-FD5B-8912-C5FDA2FD4A70" referredColumn="5B940C14-ADB7-12BB-77E0-B1BEDA9BCDB9"/>
+</associations>
+</Column>
+<Column name="ARTIKL_Artikl_ID" id="5C232CFC-0989-2B27-516C-B4584FDBEEBF">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>B9661ECA-8287-7528-94F6-3B3165271995</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBE64547-326E-ABB7-2D23-0C1A7BFF5D1A" referredColumn="9BC1A4FD-33AA-7E0A-A5CB-DC9AB72C9A64"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="176CCD8B-8539-7A7E-6CD5-07A46D1F9AA9" name="NARUCENI_ARTIKL_PK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>B92B0251-2AB5-D603-EACF-12D267D03C39</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="992B48CC-A24C-2DAC-A243-99F857FF3075"/>
+<colUsage columnID="5C232CFC-0989-2B27-516C-B4584FDBEEBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="671311D2-2280-2378-C6C5-82CB3FF396F1" name="NARUCENI_ARTIKL_ARTIKL_FK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>8C981843-38B1-9CAB-0064-F081353D2242</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C232CFC-0989-2B27-516C-B4584FDBEEBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28CC64DC-0459-8FE6-822D-CC5BD99B134B" name="NARUCENI_ARTIKL_NARUDZBA_FK">
+<createdBy>Korisnik</createdBy>
+<createdTime>2023-01-26 12:05:10 UTC</createdTime>
+<generatorID>25E4C71B-ABED-CAC3-0994-70E8344437B5</generatorID>
+<ownerDesignName>slamDunkZvane</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="992B48CC-A24C-2DAC-A243-99F857FF3075"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
